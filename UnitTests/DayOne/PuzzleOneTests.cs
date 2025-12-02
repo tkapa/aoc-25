@@ -60,6 +60,7 @@ public class PuzzleOneTests
     [TestCase(99, "R1", 0)]
     [TestCase(5, "L10", 95)]
     [TestCase(95, "R5", 0)]
+    [TestCase(16, "R284", 0)]
     public void ParsedLineWhenAddedShouldReturnCorrectNumber(int startingValue, string input, int expectedValue)
     {
         // Arrange
@@ -74,7 +75,7 @@ public class PuzzleOneTests
     }
 
     [TestCase("Test1.txt", 3)]
-    [TestCase("Actual1.txt", 3)]
+    [TestCase("Actual1.txt", 1141)]
     public void TestVerification(string fileName, int expectedTimes)
     {
         var timesAtZero = 0;
@@ -88,6 +89,7 @@ public class PuzzleOneTests
             // Read the stream as a string.
             foreach (var line in lines)
             {
+                var previous = safe.Value;
                 var addedNumber = safe.ParseLine(line);
                 safe.AddNumber(addedNumber);
                 

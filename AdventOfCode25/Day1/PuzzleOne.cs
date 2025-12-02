@@ -10,16 +10,10 @@ public class PuzzleOne(int value, int maximumValue = 99)
 
     public void AddNumber(int number)
     {
-        var timesWrapped = MathF.Abs(number) / _maximumValue;
-        var wraps = (int)MathF.Round(timesWrapped, 0, MidpointRounding.ToZero);
-        var wrappingFix = (_maximumValue + 1);
-
-        if (wraps != 0)
-        {
-            wrappingFix *= wraps;
-        }
+        var adjustedValue = AdjustedValue(number);
+        var wrappingFix = maximumValue + 1;
         
-        Value += number;
+        Value += adjustedValue;
 
         if (Value < 0)
         {
@@ -29,6 +23,21 @@ public class PuzzleOne(int value, int maximumValue = 99)
         {
             Value -= wrappingFix;
         }
+    }
+
+    private int AdjustedValue(int number)
+    {
+        var originalSign = MathF.Sign(number);
+        var actualMovementNumber = number % _maximumValue;
+        var timesWrapped = MathF.Abs(number) / _maximumValue;
+
+        if (timesWrapped < 1) return actualMovementNumber;
+        
+        var wraps = (int)MathF.Round(timesWrapped, 0, MidpointRounding.ToZero);
+        if (wraps <= 0) return actualMovementNumber;
+        actualMovementNumber += (wraps * -originalSign);
+
+        return actualMovementNumber;
     }
 
     public int ParseLine(string line)
