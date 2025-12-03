@@ -1,7 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=07c259c1_002D301f_002D4bcf_002D8769_002Ddd90b02a4e62/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="PuzzleOneTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::75BD4027-B836-4366-A48B-48EA9085719F::net10.0::UnitTests.DayOne.PuzzleOneTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::75BD4027-B836-4366-A48B-48EA9085719F::net10.0::UnitTests.DayTwo.IdFinderTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=50cfa1e8_002Dcde4_002D4cde_002D8cfb_002D3248f01f6c7e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WhenAddingShouldReturnCorrectNumber" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;

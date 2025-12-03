@@ -2,7 +2,7 @@ using System.Diagnostics;
 
 namespace AdventOfCode25.Day1;
 
-public class PuzzleOne(int value, int maximumValue = 99)
+public class SafeCracker(int value, int maximumValue = 99)
 {
     public int Value { get; private set;  } = value;
     public int TimesAtZero { get; private set; } = 0;

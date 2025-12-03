@@ -3,7 +3,7 @@ using AdventOfCode25.Day1;
 
 namespace UnitTests.Day1;
 
-public class PuzzleOneTests
+public class SafeCrackerTests
 {
     private readonly int _defaultMaximumValue = 99;
     
@@ -29,7 +29,7 @@ public class PuzzleOneTests
     public void AddNumberPart1ShouldReturnCorrectNumber(int startingValue, int addedValue, int finalValue)
     {
         // Arrange
-        var safe = new PuzzleOne(startingValue, _defaultMaximumValue);
+        var safe = new SafeCracker(startingValue, _defaultMaximumValue);
         
         // Act
         safe.AddNumberPart1(addedValue);
@@ -45,7 +45,7 @@ public class PuzzleOneTests
     public void ParseLineShouldReturnCorrectNumber(string input, int expectedValue)
     {
         // Arrange
-        var safe = new PuzzleOne(0, _defaultMaximumValue);
+        var safe = new SafeCracker(0, _defaultMaximumValue);
         
         // Act
         var output = safe.ParseLine(input);
@@ -64,7 +64,7 @@ public class PuzzleOneTests
     public void ParsedLinePart1WhenAddedShouldReturnCorrectNumber(int startingValue, string input, int expectedValue)
     {
         // Arrange
-        var safe = new PuzzleOne(startingValue, _defaultMaximumValue);
+        var safe = new SafeCracker(startingValue, _defaultMaximumValue);
         
         // Act
         var addedNumber = safe.ParseLine(input);
@@ -79,11 +79,11 @@ public class PuzzleOneTests
     public void PartOneVerification(string fileName, int expectedTimes)
     {
         var startingValue = 50;
-        var safe = new PuzzleOne(startingValue, _defaultMaximumValue);
+        var safe = new SafeCracker(startingValue, _defaultMaximumValue);
         try
         {
             // Open the text file using a stream reader.
-            var lines = File.ReadLines($"./DayOne/Inputs/{fileName}");
+            var lines = File.ReadLines($"./Day1/Inputs/{fileName}");
 
             // Read the stream as a string.
             foreach (var line in lines)

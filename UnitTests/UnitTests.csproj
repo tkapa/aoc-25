@@ -25,10 +25,16 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="DayOne\Inputs\Test1.txt">
+      <None Update="Day1\Inputs\Test1.txt">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
-      <None Update="DayOne\Inputs\Actual1.txt">
+      <None Update="Day1\Inputs\Actual1.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Day2\Inputs\Test.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Day2\Inputs\Actual.txt">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
     </ItemGroup>
