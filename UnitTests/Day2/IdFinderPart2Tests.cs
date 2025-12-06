@@ -51,7 +51,7 @@ public class IdFinderPart2Tests
     
         
     [TestCase("Test.txt", 4174379265)]
-    [TestCase("Actual.txt", 24043483400)]
+    [TestCase("Actual.txt", 38262920235)]
     public void FindInvalidIdsFindsTotalValueOfIds(string fileName, long expectedTotal)
     {
         // Arrange
