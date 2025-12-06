@@ -40,6 +40,7 @@ public class JoltageFinderPart2Tests
         }
         
         // Assert
+        // 172895362045136 is not correct for Actual
         Assert.That(output, Is.EqualTo(expectedTotal)); 
     }
 }
