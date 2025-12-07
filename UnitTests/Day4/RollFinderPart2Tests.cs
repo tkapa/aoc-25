@@ -37,7 +37,7 @@ public class RollFinderPart2Tests
     
     
     [TestCase("Test.txt", 43)]
-    [TestCase("Actual.txt", 0)]
+    [TestCase("Actual.txt", 8354)]
     public void FindAccessibleRolls(string fileName, int expectedTotal)
     {
         // Arrange

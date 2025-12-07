@@ -31,11 +31,9 @@ public static class RollFinder
         {
             for (var x = 0; x < xLength; x++)
             {
-                if (IsValidRoll(x, y, input))
-                {
-                    validRolls++;
-                    removalList.Add((x, y));
-                }
+                if (!IsValidRoll(x, y, input)) continue;
+                validRolls++;
+                removalList.Add((x, y));
             }
         }
 
@@ -51,7 +49,6 @@ public static class RollFinder
     {
         var validRolls = 0;
         var newValidRolls = true;
-        
 
         while (newValidRolls)
         {
@@ -82,7 +79,7 @@ public static class RollFinder
             for (var checkX = x - 1; checkX <= x + 1; checkX++)
             {
                 if (checkY == y && checkX == x) continue;
-                if  (checkX < 0 || checkX > xLength) continue;
+                if (checkX < 0 || checkX > xLength) continue;
 
                 if (input[checkY][checkX]) adjacentRolls++;
             }
