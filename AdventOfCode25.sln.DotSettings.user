@@ -62,10 +62,19 @@
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d8722a7e_002Dfe43_002D4699_002Dbc2a_002D1630db806efe/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="IsValidRollShouldReturnCorrectResult" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::75BD4027-B836-4366-A48B-48EA9085719F::net10.0::UnitTests.Day4.RollFinderPart2Tests.FindAccessibleRolls&lt;/TestId&gt;
-    &lt;TestId&gt;NUnit3x::75BD4027-B836-4366-A48B-48EA9085719F::net10.0::UnitTests.Day4.RollFinderTests.FindAccessibleRolls&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
+  &lt;And&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;NUnit3x::75BD4027-B836-4366-A48B-48EA9085719F::net10.0::UnitTests.Day4.RollFinderPart2Tests.FindAccessibleRolls&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::75BD4027-B836-4366-A48B-48EA9085719F::net10.0::UnitTests.Day4.RollFinderTests.FindAccessibleRolls&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::75BD4027-B836-4366-A48B-48EA9085719F::net10.0::UnitTests.Day5.IngredientFinderTests.FindValidIds&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+    &lt;Not&gt;
+      &lt;And&gt;
+        &lt;Namespace&gt;UnitTests.Day4&lt;/Namespace&gt;
+        &lt;Project Location="/Users/koth/Developer/Personal/AdventOfCode25/UnitTests" Presentation="&amp;lt;UnitTests&amp;gt;" /&gt;
+      &lt;/And&gt;
+    &lt;/Not&gt;
+  &lt;/And&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e0e3049d_002Dc46c_002D4a36_002Db3a8_002Dcf23da08f0ec/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ParsedLineWhenAddedShouldReturnCorrectNumber" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
